@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Bagian Login */
+.login-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-content {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Social Buttons */
+.social-login {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.social-btn {
+    flex: 1;
+    background: transparent;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background: #222;
+}
+
+/* Divider "or" */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #444;
+}
+
+.divider span {
+    padding: 0 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #d1d1d1; /* Abu-abu seperti di gambar */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.forgot-pass {
+    color: #ccc;
+    text-decoration: none;
+}
+
+/* Sign In Button */
+.sign-in-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #C084FC; /* Warna ungu sesuai gambar */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.terms {
+    font-size: 10px;
+    color: #888;
+    text-align: left;
+}
+
+.terms a {
+    color: #888;
+}
+
+/* Bagian Gambar (Kanan) */
+.image-section {
+    flex: 1;
+    background-image: url('asset/foto_mua.jpeg'); no-repeat center/cover;
+    filter: grayscale(100%); /* Efek hitam putih sesuai gambar */
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 768px) {
+    .image-section {
+        display: none;
+    }
+}
